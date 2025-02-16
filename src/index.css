@@ -12,9 +12,19 @@
 
 .root{
     --yellow: #FCB72B; /* RGB : rgb(252, 183, 43) HSL : hsl(40, 97%, 58%) */
-    --lightYellow: #FFF4DF; /* RGB : rgb(255, 244, 223) HSL : hsl(39°, 100%, 94%) */
-    --darkNavy: #495567; /* RGB : rgb(73, 85, 103) HSL : hsl(216°, 17%, 35%) */
+    --lightYellow: #FFF4DF; /* RGB : rgb(255, 244, 223) HSL : hsl(39, 100%, 94%) */
+    --darkNavy: #495567; /* RGB : rgb(73, 85, 103) HSL : hsl(216, 17%, 35%) */
     --dimGrey: #939CAA; /*RGB : rgb(147, 156, 170) HSL : hsl(217, 12%, 62%) */
-    --lightGrey: #E5ECF4; /* RGB : rgb(229, 236, 244) HSL : hsl(212°, 41%, 93%) */
-    --snow: #F2F5F9; /* RGB : rgb(242, 245, 249) HSL : hsl(214°, 37%, 96%) */
+    --lightGrey: #E5ECF4; /* RGB : rgb(229, 236, 244) HSL : hsl(212, 41%, 93%) */
+    --snow: #F2F5F9; /* RGB : rgb(242, 245, 249) HSL : hsl(214, 37%, 96%) */
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
