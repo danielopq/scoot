@@ -19,6 +19,10 @@
     --snow: #F2F5F9; /* RGB : rgb(242, 245, 249) HSL : hsl(214, 37%, 96%) */
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     width: 100vw;
     height: auto;

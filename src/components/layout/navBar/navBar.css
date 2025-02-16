@@ -2,7 +2,9 @@
     width: 100vw;
     height: 64px;
     max-width: 767px;
-    padding: 24px 32px;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
     background: url('../../../assets/img/logo.svg') center/75px no-repeat;
     border: solid 1px red;
 }

@@ -1,10 +1,19 @@
 import './navBar.css';
 import HamburgerBt from './components/hamburgerBt/HamburgerBt';
+import { useState } from 'react';
 
 const NavBar = (): React.JSX.Element => {
+
+    const [menuDeploy,setMenuDeploy] = useState<boolean>(false);
+
+    const showMobileMenu = () =>{
+        console.log("hello");
+        setMenuDeploy(!menuDeploy);
+    }
+
     return (
         <nav id="navBar">
-            <HamburgerBt />
+            <HamburgerBt menuDisplayed={menuDeploy} handleClick={showMobileMenu} />
         </nav>
     )
 }

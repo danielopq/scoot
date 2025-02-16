@@ -4,6 +4,16 @@
     border: none;
     background-color: transparent;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     cursor: pointer;
+}
+
+.closeIcon{
+    background-size: 18px;
+    background-image: url('./img/close.svg');
+}
+
+.burgerIcon{
+    background-size: 19px;
+    background-image: url('./img/hamburger.svg');
 }
