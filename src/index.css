@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'LexendDeca-Regular';
+    src: url(../src/assets/fonts/LexendDeca-Regular.woff)format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SpaceMono-Bold';
+    src: url(../src/assets/fonts/SpaceMono-Bold.woff)format('woff');
+    font-weight: 700;
+}
