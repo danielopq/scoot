@@ -1,9 +1,10 @@
 import './navBar.css';
+import HamburgerBt from './components/hamburgerBt/HamburgerBt';
 
-const NavBar = ():React.JSX.Element=>{
-    return(
+const NavBar = (): React.JSX.Element => {
+    return (
         <nav id="navBar">
-            navigation var
+            <HamburgerBt />
         </nav>
     )
 }
