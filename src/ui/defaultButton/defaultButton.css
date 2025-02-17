@@ -1,0 +1,17 @@
+.defaultButton{
+    width: 180px;
+    height: 53px;
+    font: 700 15px/25px 'SpaceMono-Bold';
+    border: solid 1px var(--orange);
+    background-color: var(--orange);
+    color: white;
+    transition: color 0.3s ease,background-color 0.3s ease;
+    cursor: pointer;
+}
+
+@media(hover:hover){
+    .defaultButton:hover{
+        background-color: transparent;
+        color: var(--orange);
+    }
+}
