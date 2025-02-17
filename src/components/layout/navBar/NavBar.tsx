@@ -1,7 +1,6 @@
-import './navBar.css';
-import HamburgerBt from '../../ui/hamburgerBt/HamburgerBt';
 import { useState } from 'react';
-import DefaultButton from '../../ui/defaultButton/DefaultButton';
+import './navBar.css';
+import {HamburgerBt, DefaultButton} from '../../ui';
 
 const NavBar = (): React.JSX.Element => {
 
