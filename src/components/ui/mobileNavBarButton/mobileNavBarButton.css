@@ -4,5 +4,6 @@
     border: none;
     background-color: transparent;
     color: var(--lightGrey);
+    text-align: left;
     cursor: pointer;
 }

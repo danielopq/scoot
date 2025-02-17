@@ -2,7 +2,7 @@ import './MobileNavBarButton.css';
 
 interface MobileNavBarButtonProps {
     text: string;
-    handleClick: () => void;
+    handleClick?: () => void;
 }
 
 /**

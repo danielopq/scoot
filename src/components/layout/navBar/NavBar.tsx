@@ -1,25 +1,29 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './navBar.css';
-import {HamburgerBt, DefaultButton} from '../../ui';
+import { HamburgerBt, MobileNavBarButton, DefaultButton } from '../../ui';
 
 const NavBar = (): React.JSX.Element => {
 
-    const [menuDeploy,setMenuDeploy] = useState<boolean>(false);
+    const [mobileMenuDisplay, setMobileMenuDisplay] = useState<boolean>(false);
+    const mobileNavBarRef = useRef<HTMLDivElement>(null);
 
-    const showMobileMenu = () =>{
-        console.log("hello");
-        setMenuDeploy(!menuDeploy);
-    }
+    useEffect(() => {
+        if (mobileNavBarRef.current) {
+            mobileNavBarRef.current.style.display = mobileMenuDisplay ? 'block' : 'none';
+        }
+    }, [mobileMenuDisplay]);
 
     return (
         <nav id="navBar">
-            <HamburgerBt menuDisplayed={menuDeploy} handleClick={showMobileMenu} />
-            <div id="mobileNavBar">
+            <HamburgerBt menuDisplayed={mobileMenuDisplay} handleClick={(): void => setMobileMenuDisplay(!mobileMenuDisplay)} />
+            <div ref={mobileNavBarRef} id="mobileNavBar">
                 <div id="mobileNavBar-content">
                     <div>
-                        
+                        <MobileNavBarButton text="About" />
+                        <MobileNavBarButton text="Location" />
+                        <MobileNavBarButton text="Careers" />
                     </div>
-                    <DefaultButton text="Get Scootin"/>
+                    <DefaultButton text="Get Scootin" />
                 </div>
             </div>
         </nav>
