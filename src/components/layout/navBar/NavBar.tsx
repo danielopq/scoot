@@ -14,6 +14,10 @@ const NavBar = (): React.JSX.Element => {
     return (
         <nav id="navBar">
             <HamburgerBt menuDisplayed={menuDeploy} handleClick={showMobileMenu} />
+            <div id="mobileNavBar">
+                <div id="mobileNavBar-content">
+                </div>
+            </div>
         </nav>
     )
 }

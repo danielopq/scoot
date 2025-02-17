@@ -2,9 +2,29 @@
     width: 100vw;
     height: 64px;
     max-width: 767px;
+    position: relative;
     padding: 0px 32px;
     display: flex;
     align-items: center;
     background: url('../../../assets/img/logo.svg') center/75px no-repeat;
-    border: solid 1px red;
+}
+
+#mobileNavBar{
+    width: inherit;
+    height: calc(100vh - 64px);
+    max-width: 767px;
+    position: absolute;
+    top:64px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.74);
+}
+
+#mobileNavBar-content{
+    width: 68%;
+    height: inherit;
+    padding: 64px 0px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333A44;
 }

@@ -1,0 +1,15 @@
+.navBarButton{
+    padding: 0px;
+    font: 700 15px/25px 'SpaceMono-Bold';
+    border: none;
+    background-color: transparent;
+    color: var(--dimGrey);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+@media(hover:hover){
+    .navBarButton:hover{
+        color: var(--orange);
+    }
+}
