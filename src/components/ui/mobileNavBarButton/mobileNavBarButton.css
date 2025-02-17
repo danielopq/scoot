@@ -1,0 +1,8 @@
+.mobileNavBarButton{
+    padding: 0px;
+    font: 700 18px/25px 'SpaceMono-Bold';
+    border: none;
+    background-color: transparent;
+    color: var(--lightGrey);
+    cursor: pointer;
+}

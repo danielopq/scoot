@@ -1,7 +1,7 @@
 import './navBar.css';
-import HamburgerBt from './components/hamburgerBt/HamburgerBt';
+import HamburgerBt from '../../ui/hamburgerBt/HamburgerBt';
 import { useState } from 'react';
-import DefaultButton from '../../../ui/defaultButton/defaultButton';
+import DefaultButton from '../../ui/defaultButton/DefaultButton';
 
 const NavBar = (): React.JSX.Element => {
 
@@ -17,6 +17,9 @@ const NavBar = (): React.JSX.Element => {
             <HamburgerBt menuDisplayed={menuDeploy} handleClick={showMobileMenu} />
             <div id="mobileNavBar">
                 <div id="mobileNavBar-content">
+                    <div>
+                        
+                    </div>
                     <DefaultButton text="Get Scootin"/>
                 </div>
             </div>
