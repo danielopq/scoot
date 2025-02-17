@@ -2,6 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import './navBar.css';
 import { HamburgerBt, MobileNavBarButton, DefaultButton } from '../../ui';
 
+/**
+ * Navigation bar component displayed at the top of all website sections.
+ * It includes a hamburger button for mobile navigation and menu options.
+ * 
+ * @returns {JSX.Element} The NavBar component.
+ */
 const NavBar = (): React.JSX.Element => {
 
     const [mobileMenuDisplay, setMobileMenuDisplay] = useState<boolean>(false);
