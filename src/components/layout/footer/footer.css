@@ -111,6 +111,7 @@ footer button {
 @media (min-width: 768px) {
     #footerTop {
         height: 300px;
+        background: var(--darkNavy) url('./img/semi-circles.svg') calc(100% + 173px) 150px / 1153px no-repeat;
     }
 
     #footerTop h2 {
@@ -149,7 +150,7 @@ footer button {
     }
 }
 
-/*############################## TABLET VERSION ##############################*/
+/*############################## DESKTOP VERSION ##############################*/
 
 @media (min-width: 1025px) {
     #footerTop {
@@ -159,13 +160,11 @@ footer button {
 
     #footerTop h2 {
         width: 415px;
-        margin: 0px 300px 0px 0px;
+        margin: 0px 336px 0px 0px;
         text-align: left;
     }
 
     #footerTop>div {
         width: 256px;
-        display: inline-flex;
-        justify-content: space-between;
     }
 }
