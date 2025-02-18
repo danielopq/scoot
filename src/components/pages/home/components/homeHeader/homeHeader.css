@@ -1,0 +1,21 @@
+#homeHeader{
+    width: 100vw;
+    height: 650px;
+    padding: 115px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:white;
+    background: url('./img/right-arrow.svg') -312px 478px/447px no-repeat, url('./img/home-hero-mobile.jpg') right/cover no-repeat;
+    border: solid 1px red;
+}
+
+#homeHeader h1{
+    width: 311px;
+}
+
+#homeHeader p{
+    width: 311px;
+    margin: 24px 0px 34px;
+}
