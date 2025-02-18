@@ -1,8 +1,9 @@
 footer{
     width: 100vw;
     height: 758px;
+    display: flex;
+    flex-direction: column;
     margin-top: 500px;
-    background: #333A44 ;
 }
 
 #footerTop{
@@ -27,31 +28,71 @@ footer{
     justify-content: space-between;
 }
 
-.signUpBt{
-    height: 40px;
+footer button{
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease;
+}
+
+#appStoreBt{
+    width: 113px;
+    height: 40px;
+    background: transparent url('./img/app-store.svg') center/113px no-repeat;
+}
+
+#googlePlayBt{
+    width: 130px;
+    height: 40px;
+    background: transparent url('./img/google-play.svg') center/130px no-repeat;
+}
+
+#footerBottom{
+    width: inherit;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333A44 url('./img/logo-white.svg') 50% 64px / 107px no-repeat;
+}
+
+#footerBottom > nav{
+    height: 107px;
+    margin: 134px 0px 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#socialMedia{
+    width: 120px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.mediaBt{
+    width: 24px;
+    height: 24px;
+    background: transparent center/24px no-repeat;
+}
+
+#facebook{
+    background-image: url('./img/facebook.svg');
+}
+
+#twitter{
+    background-image: url('./img/twitter.svg');
+}
+
+#instagram{
+    background-image: url('./img/instagram.svg');
 }
 
 @media(hover:hover){
     .signUpBt:hover{
         opacity: 0.5;
     }
-}
 
-#appStoreBt{
-    width: 113px;
-    background: transparent url('./img/app-store.svg') center/113px no-repeat;
-}
-
-#googlePlayBt{
-    width: 130px;
-    background: transparent url('./img/google-play.svg') center/130px no-repeat;
-}
-
-#footerBottom{
-    width: inherit;
-    height: 320px;
-    background: #333A44 ;
+    .mediaBt:hover{
+        opacity: 0.5;
+    }
 }
