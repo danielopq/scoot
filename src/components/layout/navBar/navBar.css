@@ -5,6 +5,7 @@
     position: relative;
     padding: 0px 32px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     background: url('../../../assets/img/logo.svg') center/75px no-repeat;
 }
@@ -35,4 +36,45 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+#desktopNavBar, #desktopNavBar > div{
+    height: auto;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#desktopNavBar{
+    width: 100vw;
+}
+
+#desktopNavBar > div{
+    width: 249px;
+}
+
+/*############################## TABLET AND DESKTOP VERSION ##############################*/
+
+@media (min-width: 768px) {
+    #navBar{
+        width: 100vw;
+        height: 96px;
+        max-width: 1186px;
+        padding: 0px 40px 0px 205px;
+        background: url('../../../assets/img/logo.svg') 40px 50%/108px no-repeat;
+        justify-content: flex-end;
+    }
+    
+    #hamburgerBt{
+        display: none;
+    }
+
+    #mobileNavBar{
+        display: none;
+    }
+
+    #desktopNavBar, #desktopNavBar > div{
+        display: inline-flex!important;
+    }
+    
 }

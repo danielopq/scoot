@@ -2,7 +2,7 @@ import './navBarButton.css';
 
 interface navBarButtonProps {
     text: string;
-    handleClick: () => void;
+    handleClick?: () => void;
 }
 
 /**

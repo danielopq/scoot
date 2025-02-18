@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './navBar.css';
-import { HamburgerBt, MobileNavBarButton, DefaultButton } from '../../ui';
+import { HamburgerBt, MobileNavBarButton, DefaultButton, NavBarButton } from '../../ui';
 
 /**
  * Navigation bar component displayed at the top of all website sections.
@@ -22,6 +22,14 @@ const NavBar = (): React.JSX.Element => {
     return (
         <nav id="navBar">
             <HamburgerBt menuDisplayed={mobileMenuDisplay} handleClick={(): void => setMobileMenuDisplay(!mobileMenuDisplay)} />
+            <div id="desktopNavBar">
+                <div>
+                    <NavBarButton text="About" />
+                    <NavBarButton text="Location" />
+                    <NavBarButton text="Careers" />
+                </div>
+                <DefaultButton text="Get Scootin" />
+            </div>
             <div ref={mobileNavBarRef} id="mobileNavBar">
                 <div id="mobileNavBar-content">
                     <div>
