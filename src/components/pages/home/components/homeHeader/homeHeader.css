@@ -1,21 +1,66 @@
-#homeHeader{
-    width: 100vw;
+#homeHeader {
+    width: inherit;
     height: 650px;
-    padding: 115px 32px 0px;
+    padding-top: 115px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color:white;
-    background: url('./img/right-arrow.svg') -312px 478px/447px no-repeat, url('./img/home-hero-mobile.jpg') right/cover no-repeat;
+    color: white;
+    background: url('../../../../../assets/img/patterns/right-arrow.svg') -312px 478px/447px no-repeat,
+        url('./img/home-hero-mobile.jpg') center/cover no-repeat;
     border: solid 1px red;
 }
 
-#homeHeader h1{
+#homeHeader h1 {
     width: 311px;
 }
 
-#homeHeader p{
+#homeHeader p {
     width: 311px;
     margin: 24px 0px 34px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width:768px) and (max-width:1024px) {
+    #homeHeader {
+        padding-top: 137px;
+        background: url('../../../../../assets/img/patterns/right-arrow.svg') -127px 473px/447px no-repeat,
+            url('../../../../../assets/img/patterns/white-circles.svg') calc(100% + 31px) 542px/234px no-repeat,
+            url('./img/home-hero-tablet.jpg') center/cover no-repeat;
+    }
+
+    #homeHeader h1,
+    #homeHeader p {
+        width: 570px;
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width: 1025px) {
+    #homeHeader {
+        padding-top: 153px;
+        align-items: flex-start;
+        text-align: left;
+        background: url('../../../../../assets/img/patterns/right-arrow.svg') 705px 355px/447px no-repeat,
+            url('../../../../../assets/img/patterns/line.svg') 0% 355px/203px no-repeat,
+            url('../../../../../assets/img/patterns/white-circles.svg') calc(100% + 31px) 422px/234px no-repeat,
+            url('./img/home-hero-desktop.jpg') center/cover no-repeat;
+    }
+
+    #homeHeader h1 {
+        width: 500px;
+        margin-left: 165px;
+    }
+
+    #homeHeader p {
+        width: 405px;
+        margin: 40px 260px 40px;
+    }
+
+    #homeHeader button {
+        margin-left: 260px;
+    }
 }
