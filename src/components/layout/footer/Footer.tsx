@@ -6,7 +6,7 @@ import { NavBarButton } from '../../ui';
  * 
  * @returns {React.JSX.Element} The Footer component.
  */
-const Footer:React.FC = ():React.JSX.Element =>{
+const Footer: React.FC = (): React.JSX.Element => {
     return (
         <footer>
             <div id="footerTop">
@@ -18,15 +18,17 @@ const Footer:React.FC = ():React.JSX.Element =>{
             </div>
             <div id="footerBottom">
                 <nav>
-                    <NavBarButton text="About"/>
-                    <NavBarButton text="Location"/>
-                    <NavBarButton text="Careers"/>
+                    <div id="footerLinks">
+                        <NavBarButton text="About" />
+                        <NavBarButton text="Location" />
+                        <NavBarButton text="Careers" />
+                    </div>
+                    <div id="socialMedia">
+                        <button className='mediaBt' id="facebook"></button>
+                        <button className='mediaBt' id="twitter"></button>
+                        <button className='mediaBt' id="instagram"></button>
+                    </div>
                 </nav>
-                <div id="socialMedia">
-                    <button className='mediaBt' id="facebook"></button>
-                    <button className='mediaBt' id="twitter"></button>
-                    <button className='mediaBt' id="instagram"></button>
-                </div>
             </div>
         </footer>
     )

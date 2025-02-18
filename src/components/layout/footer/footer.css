@@ -1,12 +1,13 @@
-footer{
+footer {
     width: 100vw;
-    height: 758px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 500px;
+    background-color: #333A44;
 }
 
-#footerTop{
+#footerTop {
     width: inherit;
     height: 320px;
     display: flex;
@@ -15,84 +16,156 @@ footer{
     background: var(--darkNavy) url('./img/semi-circles.svg') calc(100% + 173px) 162px / 1153px no-repeat;
 }
 
-#footerTop h2{
+#footerTop h2 {
     width: 311px;
     margin: 88px 0px 40px;
     text-align: center;
     color: white;
 }
 
-#footerTop div{
+#footerTop>div {
     width: 256px;
     display: inline-flex;
     justify-content: space-between;
 }
 
-footer button{
+footer button {
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
 
-#appStoreBt{
+#appStoreBt {
     width: 113px;
     height: 40px;
     background: transparent url('./img/app-store.svg') center/113px no-repeat;
 }
 
-#googlePlayBt{
+#googlePlayBt {
     width: 130px;
     height: 40px;
     background: transparent url('./img/google-play.svg') center/130px no-repeat;
 }
 
-#footerBottom{
-    width: inherit;
+#footerBottom {
     height: 438px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #333A44 url('./img/logo-white.svg') 50% 64px / 107px no-repeat;
 }
 
-#footerBottom > nav{
+#footerBottom>nav {
+    height: 286px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./img/logo-white.svg') top/107px no-repeat;
+}
+
+#footerLinks {
     height: 107px;
-    margin: 134px 0px 85px;
+    margin: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-#socialMedia{
+#socialMedia {
     width: 120px;
     display: inline-flex;
     justify-content: space-between;
 }
-.mediaBt{
+
+.mediaBt {
     width: 24px;
     height: 24px;
     background: transparent center/24px no-repeat;
 }
 
-#facebook{
+#facebook {
     background-image: url('./img/facebook.svg');
 }
 
-#twitter{
+#twitter {
     background-image: url('./img/twitter.svg');
 }
 
-#instagram{
+#instagram {
     background-image: url('./img/instagram.svg');
 }
 
-@media(hover:hover){
-    .signUpBt:hover{
+@media(hover:hover) {
+    .signUpBt:hover {
         opacity: 0.5;
     }
 
-    .mediaBt:hover{
+    .mediaBt:hover {
         opacity: 0.5;
+    }
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) {
+    #footerTop {
+        height: 300px;
+    }
+
+    #footerTop h2 {
+        width: 457px;
+        margin: 62px 0px 40px;
+    }
+
+    #footerBottom {
+        height: 96px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #footerBottom>nav {
+        width: calc(100vw - 78px);
+        max-width: 1106px;
+        height: inherit;
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        background-position: left;
+    }
+
+    #footerLinks {
+        width: 249px;
+        height: inherit;
+        margin: 0px 0px 0px 167px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #socialMedia {
+        width: 120px;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 1025px) {
+    #footerTop {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #footerTop h2 {
+        width: 415px;
+        margin: 0px 300px 0px 0px;
+        text-align: left;
+    }
+
+    #footerTop>div {
+        width: 256px;
+        display: inline-flex;
+        justify-content: space-between;
     }
 }
