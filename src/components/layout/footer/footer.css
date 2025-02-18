@@ -1,0 +1,57 @@
+footer{
+    width: 100vw;
+    height: 758px;
+    margin-top: 500px;
+    background: #333A44 ;
+}
+
+#footerTop{
+    width: inherit;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--darkNavy) url('./img/semi-circles.svg') calc(100% + 173px) 162px / 1153px no-repeat;
+}
+
+#footerTop h2{
+    width: 311px;
+    margin: 88px 0px 40px;
+    text-align: center;
+    color: white;
+}
+
+#footerTop div{
+    width: 256px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.signUpBt{
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+@media(hover:hover){
+    .signUpBt:hover{
+        opacity: 0.5;
+    }
+}
+
+#appStoreBt{
+    width: 113px;
+    background: transparent url('./img/app-store.svg') center/113px no-repeat;
+}
+
+#googlePlayBt{
+    width: 130px;
+    background: transparent url('./img/google-play.svg') center/130px no-repeat;
+}
+
+#footerBottom{
+    width: inherit;
+    height: 320px;
+    background: #333A44 ;
+}

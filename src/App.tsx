@@ -1,9 +1,10 @@
-import NavBar from "./components/layout/navBar/NavBar"
+import {NavBar,Footer} from "./components/layout";
 
 function App() {
   return (
     <>
       <NavBar />
+      <Footer />
     </>
   )
 }
