@@ -42,18 +42,24 @@ main{
     align-items: center;
 }
 
-h1{
+h1,h2,h3,p{
     padding: 0px;
     margin: 0px;
+}
+
+h1{
     font: 700 40px/40px 'SpaceMono-Bold';
     letter-spacing: -1.79px;
 }
 
 h2{
-    padding: 0px;
-    margin: 0px;
     font: 700 32px/32px 'SpaceMono-Bold';
     letter-spacing: -1.43px;
+}
+
+h3{
+    font: 700 20px/28px 'SpaceMono-Bold';
+    letter-spacing: -0.89px;
 }
 
 .defaultText{

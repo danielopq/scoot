@@ -9,7 +9,6 @@
     color: white;
     background: url('../../../../../assets/img/patterns/right-arrow.svg') -312px 478px/447px no-repeat,
         url('./img/home-hero-mobile.jpg') center/cover no-repeat;
-    border: solid 1px red;
 }
 
 #homeHeader h1 {
