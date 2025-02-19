@@ -1,5 +1,10 @@
 import './homeUserInstructions.css';
 
+/**
+ * Renders a home section that explains how to use the scooter-sharing service.
+ * 
+ * @returns {React.JSX.Element} The HomeUserInstructions component.
+ */
 const HomeUserInstructions: React.FC = (): React.JSX.Element => {
     return (
         <section id="homeUserInstructions">
