@@ -4,11 +4,11 @@
 <svg
    width="1440"
    height="15"
-   viewBox="0 0 380.99999 3.9687499"
+   viewBox="0 0 381 3.9687499"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="grey-line.svg"
+   sodipodi:docname="horizontalGreyLine.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,10 +22,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="px"
+     inkscape:document-units="mm"
      inkscape:zoom="1.0449705"
-     inkscape:cx="658.87025"
-     inkscape:cy="345.94277"
+     inkscape:cx="613.89291"
+     inkscape:cy="561.25984"
      inkscape:window-width="2560"
      inkscape:window-height="1369"
      inkscape:window-x="-8"
@@ -39,11 +39,11 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#d8d8d8;stroke:#ffffff;stroke-width:0.215649;stroke-linejoin:bevel;fill-opacity:1"
+       style="fill:#d8d8d8;fill-opacity:1;stroke:none;stroke-width:0.151528;stroke-linejoin:bevel"
        id="rect1"
-       width="380.78433"
-       height="3.7531009"
-       x="0.1078245"
-       y="0.1078245" />
+       width="380.84848"
+       height="3.8172219"
+       x="0.075766236"
+       y="0.075766236" />
   </g>
 </svg>

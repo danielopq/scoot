@@ -63,3 +63,28 @@
           margin-bottom: 27px;
      }
 }
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width: 1025px){
+     #homeUserInstructions {
+          width: 1440px;
+          height: 291px;
+          margin-top: 160px;
+          padding-left: 165px;
+          flex-direction: row;
+          background: url('./img/horizontalGreyLine.svg') -260px 41.5px/1440px no-repeat;
+     }
+     
+     .instruction {
+          width: 350px;
+          padding-top: 136px;
+          align-items: flex-start;
+          text-align: left;
+          background: 0% 0%/96px no-repeat;
+     }
+     
+     .instruction h3 {
+          margin-bottom: 27px;
+     }
+}
