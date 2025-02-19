@@ -1,4 +1,4 @@
-import { HomeHeader, HomeUserInstructions } from "./components";
+import { HomeHeader, HomeUserInstructions, HomeFeatures } from "./components";
 
 /**
  * Renders the home page 
@@ -10,6 +10,7 @@ const Home = (): React.JSX.Element => {
         <main>
             <HomeHeader />
             <HomeUserInstructions />
+            <HomeFeatures />
         </main>
     )
 }
