@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    background: url('../../../../../assets/img/patterns/right-arrow.svg') -312px 478px/447px no-repeat,
+    background: url('../../../../../assets/img/patterns/right-arrow-short.svg') -312px 478px/447px no-repeat,
         url('./img/home-hero-mobile.jpg') center/cover no-repeat;
 }
 
@@ -25,7 +25,7 @@
 @media (min-width:768px) and (max-width:1024px) {
     #homeHeader {
         padding-top: 137px;
-        background: url('../../../../../assets/img/patterns/right-arrow.svg') -127px 473px/447px no-repeat,
+        background: url('../../../../../assets/img/patterns/right-arrow-short.svg') -127px 473px/447px no-repeat,
             url('../../../../../assets/img/patterns/white-circles.svg') calc(100% + 31px) 542px/234px no-repeat,
             url('./img/home-hero-tablet.jpg') center/cover no-repeat;
     }
@@ -43,7 +43,7 @@
         padding-top: 153px;
         align-items: flex-start;
         text-align: left;
-        background: url('../../../../../assets/img/patterns/right-arrow.svg') 705px 355px/447px no-repeat,
+        background: url('../../../../../assets/img/patterns/right-arrow-short.svg') 705px 355px/447px no-repeat,
             url('../../../../../assets/img/patterns/line.svg') 0% 355px/203px no-repeat,
             url('../../../../../assets/img/patterns/white-circles.svg') calc(100% + 31px) 422px/234px no-repeat,
             url('./img/home-hero-desktop.jpg') center/cover no-repeat;
