@@ -1,3 +1,8 @@
+import { PageHeader } from "../../layout";
+import mobileHeaderPic from '../../../assets/img/headers/careers-location-hero-mobile.jpg';
+import tabletHeaderPic from '../../../assets/img/headers/careers-locations-hero-tablet.jpg';
+import desktopHeaderPic from '../../../assets/img/headers/careers-locations-hero-desktop.jpg';
+
 /**
  * Careers component that renders the Careers section of the website.
  * 
@@ -6,7 +11,7 @@
 const Careers:React.FC = ():React.JSX.Element=>{
     return(
         <main id="careers">
-            Careers
+            <PageHeader title="Careers" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic}/>
         </main>
     )
 }
