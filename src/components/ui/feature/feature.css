@@ -1,0 +1,61 @@
+.feature{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureTop{
+    width: inherit;
+    height: 311px;
+    position: relative;
+}
+
+.featureMainPic{
+    width: 311px;
+    height: 311px;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: center/311px no-repeat;
+    border-radius: 155px;
+}
+
+.featureArrow{
+    width: 100%;
+    max-width: 400px;
+    height: inherit;
+    position: absolute;
+}
+
+.leftDownBottom{
+    background: url('../../../assets/img/patterns/left-downward-arrow.svg') 39px 100%/735px no-repeat;
+    right:0px;
+}
+
+.leftDownTop{
+    background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 0%/735px no-repeat;
+    right:0px;
+}
+
+.rightDownTop{
+    background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 113px) 0%/735px no-repeat;
+    left:0px;
+}
+
+.feature h2{
+    width: 311px;
+    margin: 56px 0px 32px;
+    color: var(--darkNavy);
+}
+
+.feature p{
+    width: 311px;
+    color: var(--dimGrey);
+}
+
+@media (min-width:768px) and (max-width:1024px){
+
+}
