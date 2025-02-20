@@ -56,6 +56,46 @@
     color: var(--dimGrey);
 }
 
+/*############################## TABLET VERSION ##############################*/
+
 @media (min-width:768px) and (max-width:1024px){
 
+    .featureTop{
+        height: 445px;
+    }
+    
+    .featureMainPic{
+        width: 445px;
+        height: 445px;
+        background: center/445px no-repeat;
+        border-radius: 223px;
+    }
+    
+    .featureArrow{
+        max-width: 735px;
+    }
+
+    .leftDownBottom{
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 7px 100%/735px no-repeat,
+        url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
+    }
+        
+    .leftDownTop{
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 386px 85px/735px no-repeat,
+        url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
+    }
+    
+    .rightDownTop{
+        background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 386px) 0%/735px no-repeat,
+        url('./img/circle.svg') -350px 50%/445px no-repeat;
+    }
+    
+    .feature h2{
+        width: 457px;
+        margin: 56px 0px 40px;
+    }
+    
+    .feature p{
+        width: 573px;
+    }
 }

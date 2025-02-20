@@ -1,4 +1,4 @@
-#homeFeatures{
+#homeFeatures {
     width: 100vw;
     height: 2334px;
     margin: 120px 0px;
@@ -8,12 +8,25 @@
     justify-content: space-between;
 }
 
-#homeFeatures > div{
+#homeFeatures>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#homeFeatures > div button{
+#homeFeatures>div button {
     margin-top: 32px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width:768px) and (max-width:1024px) {
+    #homeFeatures {
+        height: 2679px;
+        margin: 145px 0px;
+    }
+
+    #homeFeatures>div button {
+        margin-top: 40px;
+    }
 }
