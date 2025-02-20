@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './navBar.css';
+import navigateTo from '../../../utils/navigateTo';
 import { HamburgerBt, MobileNavBarButton, DefaultButton, NavBarButton } from '../../ui';
 
 /**
@@ -24,18 +25,18 @@ const NavBar = (): React.JSX.Element => {
             <HamburgerBt menuDisplayed={mobileMenuDisplay} handleClick={(): void => setMobileMenuDisplay(!mobileMenuDisplay)} />
             <div id="desktopNavBar">
                 <div>
-                    <NavBarButton text="About" />
-                    <NavBarButton text="Location" />
-                    <NavBarButton text="Careers" />
+                    <NavBarButton text="About" handleClick={navigateTo('/about')}/>
+                    <NavBarButton text="Location" handleClick={navigateTo('/location')} />
+                    <NavBarButton text="Careers" handleClick={navigateTo('/careers')} />
                 </div>
                 <DefaultButton text="Get Scootin" />
             </div>
             <div ref={mobileNavBarRef} id="mobileNavBar">
                 <div id="mobileNavBar-content">
                     <div>
-                        <MobileNavBarButton text="About" />
-                        <MobileNavBarButton text="Location" />
-                        <MobileNavBarButton text="Careers" />
+                        <MobileNavBarButton text="About" handleClick={navigateTo('/about')} />
+                        <MobileNavBarButton text="Location" handleClick={navigateTo('/location')} />
+                        <MobileNavBarButton text="Careers" handleClick={navigateTo('/careers')} />
                     </div>
                     <DefaultButton text="Get Scootin" />
                 </div>

@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
  * 
  * @param {string} path - The destination path to navigate to.
  */
-const navigateTo = (path:string):void =>{
+const navigateTo = (path:string):(()=>void) =>{
     const navigate = useNavigate();
-    navigate(path);
+    return ()=>navigate(path);
 }
 export default navigateTo;

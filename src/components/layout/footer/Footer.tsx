@@ -1,5 +1,6 @@
 import './footer.css';
 import { NavBarButton } from '../../ui';
+import navigateTo from '../../../utils/navigateTo';
 
 /**
  * Footer component displayed across all sections of the website.
@@ -19,9 +20,9 @@ const Footer: React.FC = (): React.JSX.Element => {
             <div id="footerBottom">
                 <nav>
                     <div id="footerLinks">
-                        <NavBarButton text="About" />
-                        <NavBarButton text="Location" />
-                        <NavBarButton text="Careers" />
+                        <NavBarButton text="About" handleClick={navigateTo('/about')}/>
+                        <NavBarButton text="Location" handleClick={navigateTo('/location')} />
+                        <NavBarButton text="Careers" handleClick={navigateTo('/careers')} />
                     </div>
                     <div id="socialMedia">
                         <button className='mediaBt' id="facebook"></button>
