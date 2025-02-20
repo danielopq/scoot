@@ -1,3 +1,5 @@
+import { PageHeader } from "../../layout";
+
 /**
  * About component that renders the About section of the website.
  * 
@@ -6,7 +8,7 @@
 const About:React.FC = ():React.JSX.Element=>{
     return(
         <main>
-            About
+            <PageHeader title="About"/>
         </main>
     )
 }

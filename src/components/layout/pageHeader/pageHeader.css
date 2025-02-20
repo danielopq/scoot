@@ -1,0 +1,11 @@
+.pageHeader{
+    width: 100vw;
+    height: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: url('../../../assets/img/headers/about-hero-mobile.jpg') center/100vw no-repeat;
+}
+
