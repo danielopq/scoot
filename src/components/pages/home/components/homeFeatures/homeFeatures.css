@@ -9,6 +9,7 @@
 }
 
 #homeFeatures>div {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,5 +29,28 @@
 
     #homeFeatures>div button {
         margin-top: 40px;
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width:1025px) {
+    #homeFeatures {
+        width: 1440px;
+        height: 1655px;
+        margin: 200px 0px;
+    }
+
+    #homeFeatures > div button {
+        position:absolute;
+        margin-top: 326px;
+    }
+
+    .leftSide > button{
+        left: 165px;
+    }
+
+    .rightSide > button{
+        right: 165px;
     }
 }

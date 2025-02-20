@@ -1,101 +1,178 @@
-.feature{
+.feature {
     width: 100vw;
     height: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.featureTop{
+.leftDirection {
+    flex-direction: column;
+}
+
+.rightDirection {
+    flex-direction: column;
+}
+
+.featureTop {
     width: inherit;
     height: 311px;
     position: relative;
 }
 
-.featureMainPic{
+.featureMainPic {
     width: 311px;
     height: 311px;
-    position:absolute;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     background: center/311px no-repeat;
     border-radius: 155px;
 }
 
-.featureArrow{
+.featureArrow {
     width: 100%;
     max-width: 400px;
     height: inherit;
     position: absolute;
 }
 
-.leftDownBottom{
+.leftDownBottom {
     background: url('../../../assets/img/patterns/left-downward-arrow.svg') 39px 100%/735px no-repeat;
-    right:0px;
+    right: 0px;
 }
 
-.leftDownTop{
+.leftDownTop {
     background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 0%/735px no-repeat;
-    right:0px;
+    right: 0px;
 }
 
-.rightDownTop{
+.rightDownTop {
     background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 113px) 0%/735px no-repeat;
-    left:0px;
+    left: 0px;
 }
 
-.feature h2{
-    width: 311px;
+.featureBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature h2 {
+    width: 445px;
     margin: 56px 0px 32px;
     color: var(--darkNavy);
 }
 
-.feature p{
+.feature p {
     width: 311px;
     color: var(--dimGrey);
 }
 
 /*############################## TABLET VERSION ##############################*/
 
-@media (min-width:768px) and (max-width:1024px){
-
-    .featureTop{
+@media (min-width:768px) and (max-width:1024px) {
+    .featureTop {
         height: 445px;
     }
-    
-    .featureMainPic{
+
+    .featureMainPic {
         width: 445px;
         height: 445px;
         background: center/445px no-repeat;
         border-radius: 223px;
     }
-    
-    .featureArrow{
+
+    .featureArrow {
         max-width: 735px;
     }
 
-    .leftDownBottom{
+    .leftDownBottom {
         background: url('../../../assets/img/patterns/left-downward-arrow.svg') 7px 100%/735px no-repeat,
-        url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
+            url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
     }
-        
-    .leftDownTop{
+
+    .leftDownTop {
         background: url('../../../assets/img/patterns/left-downward-arrow.svg') 386px 85px/735px no-repeat,
-        url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
+            url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
     }
-    
-    .rightDownTop{
+
+    .rightDownTop {
         background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 386px) 0%/735px no-repeat,
-        url('./img/circle.svg') -350px 50%/445px no-repeat;
+            url('./img/circle.svg') -350px 50%/445px no-repeat;
     }
-    
-    .feature h2{
+
+    .feature h2 {
         width: 457px;
         margin: 56px 0px 40px;
     }
-    
-    .feature p{
+
+    .feature p {
         width: 573px;
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width:1025px) {
+    .feature {
+        max-width: 1440px;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .leftDirection {
+        flex-direction: row-reverse;
+        padding-left: 165px;
+    }
+
+    .rightDirection {
+        flex-direction: row;
+        padding-right: 165px;
+    }
+
+    .featureTop {
+        width: 735px;
+        height: 445px;
+    }
+
+    .featureMainPic {
+        width: 445px;
+        height: 445px;
+        background: center/445px no-repeat;
+        border-radius: 223px;
+    }
+
+    .featureArrow {
+        max-width: 735px;
+    }
+
+    .leftDownBottom {
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0px 100%/735px no-repeat;
+    }
+
+    .leftDownTop {
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 85px/735px no-repeat;
+
+    }
+
+    .rightDownTop {
+        background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 385px) 0%/735px no-repeat;
+        left: 0px;
+    }
+
+    .featureBottom {
+        width: 445px;
+        height: 445px;
+        align-items: flex-start;
+    }
+
+    .feature h2 {
+        width: inherit;
+        margin: 66px 0px 24px;
+    }
+
+    .feature p {
+        width: inherit;
     }
 }

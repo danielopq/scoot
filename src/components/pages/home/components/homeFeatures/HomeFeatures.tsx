@@ -9,7 +9,7 @@ import { Feature,DefaultButton } from '../../../../ui';
 const HomeFeatures = () => {
     return (
         <section id="homeFeatures">
-            <div>
+            <div className='leftSide'>
                 <Feature
                     pic={telemetryPic}
                     arrowType='leftDownBottom'
@@ -18,7 +18,7 @@ const HomeFeatures = () => {
                 />
                 <DefaultButton text='Learn More'/>
             </div>
-            <div>
+            <div className='rightSide'>
                 <Feature
                     pic={nearYou}
                     arrowType='rightDownTop'
@@ -27,7 +27,7 @@ const HomeFeatures = () => {
                 />
                 <DefaultButton text='Learn More'/>
             </div>
-            <div>
+            <div className='leftSide'>
                 <Feature
                     pic={payments}
                     arrowType='leftDownTop'
