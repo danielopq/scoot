@@ -2,7 +2,7 @@ import './feature.css';
 
 interface FeatureProps {
     pic: string;
-    arrowType: 'leftDownBottom' | 'leftDownTop' | 'rightDownTop';
+    arrowType: 'leftDownBottom' | 'leftDownTop' | 'leftUpBottom' | 'rightDownTop';
     header: string;
     text: string;
 }

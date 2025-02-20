@@ -1,0 +1,10 @@
+#aboutFeatures{
+    width: 100vw;
+    max-width: 1440px;
+    height: 1494px;
+    margin-top: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -47,6 +47,11 @@
     right: 0px;
 }
 
+.leftUpBottom {
+    background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 0%/735px no-repeat;
+    right: 0px;
+}
+
 .rightDownTop {
     background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 113px) 0%/735px no-repeat;
     left: 0px;
@@ -93,6 +98,11 @@
     }
 
     .leftDownTop {
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 386px 85px/735px no-repeat,
+            url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
+    }
+
+    .leftUpBottom {
         background: url('../../../assets/img/patterns/left-downward-arrow.svg') 386px 85px/735px no-repeat,
             url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
     }
@@ -152,6 +162,11 @@
     }
 
     .leftDownTop {
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 85px/735px no-repeat;
+
+    }
+
+    .leftUpBottom {
         background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 85px/735px no-repeat;
 
     }
