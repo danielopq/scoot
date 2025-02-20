@@ -4,8 +4,21 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: white;
     background: url('../../../assets/img/headers/about-hero-mobile.jpg') center/100vw no-repeat;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width:768px) and (max-width:1024px){
+    .pageHeader{
+        height: 160px;
+        padding-left: 97px;
+        display: inline-flex;
+        justify-content: flex-start;
+        background:
+        url('./img/white-circles.svg') calc(100% + 31px)/234px no-repeat,
+        url('../../../assets/img/headers/about-hero-tablet.jpg') center/100vw no-repeat;
+    }
 }
 
