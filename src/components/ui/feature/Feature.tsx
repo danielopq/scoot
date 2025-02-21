@@ -19,7 +19,7 @@ interface FeatureProps {
  */
 const Feature: React.FC<FeatureProps> = ({ pic, arrowType, header, text }): React.JSX.Element => {
     return (
-        <div className={(arrowType == 'leftDownBottom' || arrowType == 'leftDownTop') ? 'feature leftDirection' : 'feature rightDirection'}>
+        <div className={(arrowType.includes('left')) ? 'feature leftDirection' : 'feature rightDirection'}>
             <div className='featureTop'>
                 <div className='featureMainPic' style={{ backgroundImage: `url(${pic})` }}></div>
                 <div className={`featureArrow ${arrowType}`}></div>

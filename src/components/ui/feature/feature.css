@@ -48,7 +48,7 @@
 }
 
 .leftUpBottom {
-    background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 0%/735px no-repeat;
+    background: url('../../../assets/img/patterns/left-upward-arrow.svg') 32px 133px/735px no-repeat;
     right: 0px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .feature h2 {
-    width: 445px;
+    width: 311px;
     margin: 56px 0px 32px;
     color: var(--darkNavy);
 }
@@ -103,7 +103,7 @@
     }
 
     .leftUpBottom {
-        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 386px 85px/735px no-repeat,
+        background: url('../../../assets/img/patterns/left-upward-arrow.svg') 39px calc(100% - 37px)/735px no-repeat,
             url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
     }
 
@@ -158,21 +158,24 @@
     }
 
     .leftDownBottom {
-        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0px 100%/735px no-repeat;
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0px 100%/735px no-repeat,
+        url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
     }
 
     .leftDownTop {
-        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 85px/735px no-repeat;
+        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 85px/735px no-repeat,
+        url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
 
     }
 
     .leftUpBottom {
-        background: url('../../../assets/img/patterns/left-downward-arrow.svg') 0% 85px/735px no-repeat;
-
+        background: url('../../../assets/img/patterns/left-upward-arrow.svg') 39px calc(100% - 38px)/735px no-repeat,
+            url('./img/circle.svg') calc(100% + 350px) 50%/445px no-repeat;
     }
 
     .rightDownTop {
-        background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 385px) 0%/735px no-repeat;
+        background: url('../../../assets/img/patterns/right-arrow.svg') calc(100% - 385px) 0%/735px no-repeat,
+        url('./img/circle.svg') -350px 50%/445px no-repeat;
         left: 0px;
     }
 
