@@ -16,7 +16,7 @@ const About:React.FC = ():React.JSX.Element=>{
         <main>
             <PageHeader title="About" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic}/>
             <AboutFeatures />
-            <AboutValues />
+            <AboutFeatures />
         </main>
     )
 }

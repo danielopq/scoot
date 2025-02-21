@@ -1,0 +1,1 @@
+export {default as AboutFeatures} from "./aboutFeatures/AboutFeatures";

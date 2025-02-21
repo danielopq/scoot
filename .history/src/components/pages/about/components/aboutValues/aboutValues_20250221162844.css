@@ -1,0 +1,10 @@
+#aboutValues{
+    width: 100vw;
+    max-width: 1440px;
+    height: 1584px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border:solid 1px red;
+}
