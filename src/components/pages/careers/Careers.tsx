@@ -1,4 +1,4 @@
-import { PageHeader } from "../../layout";
+import { PageHeader, ScootValues } from "../../layout";
 
 import { CareersFeatures } from "./components";
 
@@ -16,6 +16,7 @@ const Careers: React.FC = (): React.JSX.Element => {
         <main id="careers">
             <PageHeader title="Careers" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic} />
             <CareersFeatures />
+            <ScootValues title='Why join us?' />
         </main>
     )
 }
