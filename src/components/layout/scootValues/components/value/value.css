@@ -38,10 +38,27 @@
     color:var(--dimGrey);
 }
 
+
+/*############################## TABLET AND DESKTOP VERSION ##############################*/
+
+@media (min-width:768px){
+    .valueTitle{
+        margin: 32px 0px 27px;
+    }
+}
+
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width:1024px){
     .value{
         width: 457px;
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media(min-width:1025px){
+    .value{
+        width: 512px;
     }
 }

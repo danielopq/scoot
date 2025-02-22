@@ -1,6 +1,6 @@
-import { PageHeader } from "../../layout";
+import { PageHeader, ScootValues } from "../../layout";
 
-import { AboutFeatures, AboutValues } from "./components";
+import { AboutFeatures } from "./components";
 
 import mobileHeaderPic from '../../../assets/img/headers/about-hero-mobile.jpg';
 import tabletHeaderPic from '../../../assets/img/headers/about-hero-tablet.jpg';
@@ -11,12 +11,12 @@ import desktopHeaderPic from '../../../assets/img/headers/about-hero-desktop.jpg
  * 
  * @returns {React.JSX.Element} The rendered About component.
  */
-const About:React.FC = ():React.JSX.Element=>{
-    return(
+const About: React.FC = (): React.JSX.Element => {
+    return (
         <main>
-            <PageHeader title="About" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic}/>
+            <PageHeader title="About" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic} />
             <AboutFeatures />
-            <AboutValues />
+            <ScootValues title="Our values"/>
         </main>
     )
 }

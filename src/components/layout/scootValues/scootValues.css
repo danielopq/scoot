@@ -1,0 +1,53 @@
+#scootValues {
+    width: 100vw;
+    max-width: 1440px;
+    height: 1535px;
+    margin-top: 120px;
+}
+
+#scootValues,
+#scootValues>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#scootValues>div {
+    height: 1439px;
+    margin-top: 64px;
+}
+
+#scootValues h2 {
+    color: var(--darkNavy);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media(min-width:768px) and (min-width:1024px){
+    #scootValues {
+        height: 1584px;
+    }
+
+    #scootValues>div {
+        height: 1486px;
+        margin-top: 64px;
+    }
+}
+
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media(min-width:1025px) {
+    #scootValues {
+        height: 608px;
+    }
+
+    #scootValues>div {
+        width: 1110px;
+        height: auto;
+        margin-top: 103px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
