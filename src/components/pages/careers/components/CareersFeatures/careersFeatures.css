@@ -1,0 +1,58 @@
+#careersFeatures {
+    width: 100vw;
+    height: 445px!important;
+    margin: 120px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px red;
+}
+
+#careersFeatures>div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px blue;
+}
+
+#careersFeatures>div button {
+    margin-top: 32px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width:768px) and (max-width:1024px) {
+    #careersFeatures {
+        height: 2679px;
+        margin: 145px 0px;
+    }
+
+    #careersFeatures>div button {
+        margin-top: 40px;
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width:1025px) {
+    #careersFeatures {
+        width: 1440px;
+        height: 1655px;
+        margin: 200px 0px;
+    }
+
+    #careersFeatures > div button {
+        position:absolute;
+        margin-top: 326px;
+    }
+
+    .leftSide > button{
+        left: 165px;
+    }
+
+    .rightSide > button{
+        right: 165px;
+    }
+}
