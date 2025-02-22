@@ -37,3 +37,11 @@
 .value p[class='defaultText']{
     color:var(--dimGrey);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width:1024px){
+    .value{
+        width: 457px;
+    }
+}
