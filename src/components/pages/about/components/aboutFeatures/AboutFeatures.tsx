@@ -1,6 +1,6 @@
 import './aboutFeatures.css';
 
-import { Feature } from '../../../../ui';
+import { Feature } from '../../../../layout';
 import digitalEra from './img/digital-era.jpg';
 import betterLiving from './img/better-living.jpg';
 

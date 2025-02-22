@@ -4,7 +4,8 @@ import telemetryPic from './img/telemetry.jpg';
 import nearYou from './img/near-you.jpg';
 import payments from './img/payments.jpg';
 
-import { Feature,DefaultButton } from '../../../../ui';
+import {DefaultButton } from '../../../../ui';
+import { Feature } from '../../../../layout';
 
 const HomeFeatures = () => {
     return (
