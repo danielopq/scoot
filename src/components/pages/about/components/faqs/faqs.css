@@ -1,0 +1,24 @@
+#faqs{
+    width: inherit;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    margin: 145px 0px 120px;
+    flex-direction: column;
+    align-items: center;
+    color:var(--darkNavy);
+}
+
+.faqTitle{
+    margin: 48px 0px 32px;
+    font: 700 24px/28px 'SpaceMono-Bold';
+    letter-spacing: -1.07px;
+}
+
+#faqs > div{
+    width: 311px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

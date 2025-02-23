@@ -1,6 +1,6 @@
 import { PageHeader, ScootValues } from "../../layout";
 
-import { AboutFeatures } from "./components";
+import { AboutFeatures, Faqs } from "./components";
 
 import mobileHeaderPic from '../../../assets/img/headers/about-hero-mobile.jpg';
 import tabletHeaderPic from '../../../assets/img/headers/about-hero-tablet.jpg';
@@ -17,6 +17,7 @@ const About: React.FC = (): React.JSX.Element => {
             <PageHeader title="About" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic} />
             <AboutFeatures />
             <ScootValues title="Our values"/>
+            <Faqs />
         </main>
     )
 }
