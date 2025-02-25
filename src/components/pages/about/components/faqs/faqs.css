@@ -10,7 +10,7 @@
 }
 
 .faqTitle{
-    margin: 32px 0px;
+    margin: 32px 0px 18px;
     font: 700 24px/28px 'SpaceMono-Bold';
     letter-spacing: -1.07px;
 }
@@ -23,9 +23,12 @@
     align-items: center;
 }
 
+/*############################## TABLET VERSION ##############################*/
+
 @media (min-width:768px) and (max-width:1024px){
     #faqs{
         margin: 120px 0px 120px;
+        border:solid 1px blue;
     }
     
     .faqTitle{
@@ -38,6 +41,8 @@
         width: 689px;
     }
 }
+
+/*############################## DESKTOP VERSION ##############################*/
 
 @media(min-width: 1025px){
     #faqs{

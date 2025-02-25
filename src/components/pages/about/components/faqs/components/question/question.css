@@ -1,16 +1,17 @@
-.question{
-    width: 311px;
+.question {
+    width: 100vw;
+    max-width: 311px;
     height: auto;
     padding: 32px 28px 32px 32px;
     margin-top: 16px;
     background-color: var(--snow);
 }
 
-.question button{
+.question button {
     width: 251px;
     height: 48px;
     padding: 0px 32px 0px 0px;
-    margin:0px;
+    margin: 0px;
     text-align: left;
     border: none;
     font: 700 18px/24px 'SpaceMono-Bold';
@@ -19,21 +20,39 @@
     transition: opacity 0.3s ease;
 }
 
-.chevronUp{
+.chevronUp {
     background: url('./img/chevron-up.svg') right/16px no-repeat;
 }
 
-.chevronDown{
+.chevronDown {
     background: url('./img/chevron-down.svg') right/16px no-repeat;
 }
 
-@media(hover:hover){
-    .question button:hover{
-        opacity:0.5;
-        cursor:pointer;
+@media(hover:hover) {
+    .question button:hover {
+        opacity: 0.5;
+        cursor: pointer;
     }
 }
 
-.question p{
+.question p {
     margin-top: 24px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media(min-width:768px) and (max-width:1024px) {
+    .question {
+        max-width: 689px;
+        padding: 32px 28px 32px 40px;
+        margin-top: 24px;
+    }
+
+    .question button {
+        width: 617px;
+        height: 28px;
+        padding: 0px;
+        font: 700 24px/28px 'SpaceMono-Bold';
+        letter-spacing: -1.07px;
+    }
 }
