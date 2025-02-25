@@ -1,9 +1,9 @@
 #faqs{
     width: inherit;
-    max-width: 1440px;
+    max-width: 1110px;
     height: auto;
     display: flex;
-    margin: 145px 0px 120px;
+    margin: 161px 0px 104px;
     flex-direction: column;
     align-items: center;
     color:var(--darkNavy);
@@ -36,5 +36,24 @@
     
     #faqs > div{
         width: 689px;
+    }
+}
+
+@media(min-width: 1025px){
+    #faqs{
+        margin: 120px 0px 160px;
+    }
+    
+    .faqTitle{
+        margin: 0px;
+        font: 700 40px/48px 'SpaceMono-Bold';
+        letter-spacing: -1.79px;
+    }
+    
+    #faqs > div{
+        width: 1110px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 }
