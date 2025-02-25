@@ -56,3 +56,21 @@
         letter-spacing: -1.07px;
     }
 }
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media(min-width:1025px){
+    .question {
+        max-width: 730px;
+        padding: 40px 32px;
+        margin-top: 16px;
+    }
+    
+    .question button {
+        width: 650px;
+        height: 28px;
+        padding: 0px;
+        font: 700 24px/28px 'SpaceMono-Bold';
+        letter-spacing: -1.07px;
+    }
+}

@@ -1,5 +1,5 @@
 #faqs{
-    width: inherit;
+    width: 100vw;
     max-width: 1110px;
     height: auto;
     display: flex;
@@ -16,7 +16,8 @@
 }
 
 #faqs > div{
-    width: 311px;
+    width: 100vw;
+    max-width: 311px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,6 @@
 @media (min-width:768px) and (max-width:1024px){
     #faqs{
         margin: 120px 0px 120px;
-        border:solid 1px blue;
     }
     
     .faqTitle{
@@ -38,7 +38,7 @@
     }
     
     #faqs > div{
-        width: 689px;
+        max-width: 689px;
     }
 }
 
@@ -56,7 +56,8 @@
     }
     
     #faqs > div{
-        width: 1110px;
+        max-width: 1110px;
+        margin-top: 64px;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
