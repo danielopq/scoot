@@ -14,7 +14,7 @@
 } 
 /*############################## DESKTOP VERSION ##############################*/
 
-@media (min-width: 768px){
+@media (min-width: 1025px){
     #jobOffers{
         margin: 120px 0px 160px;
     }
