@@ -1,6 +1,5 @@
 #worldMap {
-    width: 100vw;
-    max-width: 311px;
+    width: 311px;
     height: 528px;
     position: relative;
     margin-top: 72px;
@@ -8,7 +7,7 @@
 }
 
 #mobileCities {
-    width: 311px;
+    width: inherit;
     height: 336px;
     position: absolute;
     bottom: 0px;
@@ -22,6 +21,11 @@
     color: var(--darkNavy);
 }
 
+#TabletDesktopCities{
+    width: inherit;
+    position: relative;
+}
+
 #mobileCities>div {
     width: inherit;
     height: 72px;
@@ -29,4 +33,26 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(252, 183, 43, 0.15);
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media(min-width:768px) and (max-width:1024px){
+    #worldMap {
+        width: 689px;
+        height: 705px;
+        margin-top: 144px;
+        background: url('./img/world-map-tablet.png') top/689px no-repeat;
+        border: solid 1px red;
+    }
+    
+    #mobileCities {
+        display: none;
+    }
+
+    #TabletDesktopCities{
+        display: inline-flex;
+        height: 337px;
+        border: solid 1px red;
+    }
 }
