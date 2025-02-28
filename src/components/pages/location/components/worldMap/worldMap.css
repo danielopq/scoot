@@ -1,0 +1,32 @@
+#worldMap {
+    width: 100vw;
+    max-width: 311px;
+    height: 528px;
+    position: relative;
+    margin-top: 72px;
+    background: url('./img/world-map-mobile.png') top/311px no-repeat;
+}
+
+#mobileCities {
+    width: 311px;
+    height: 336px;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font: 700 24px/28px 'SpaceMono-Bold';
+    letter-spacing: -1.07px;
+    text-align: center;
+    color: var(--darkNavy);
+}
+
+#mobileCities>div {
+    width: inherit;
+    height: 72px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 183, 43, 0.15);
+}
