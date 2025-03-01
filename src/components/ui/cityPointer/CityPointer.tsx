@@ -21,27 +21,37 @@ interface CityPointerProps {
  * @returns {React.JSX.Element} The CityPointer component.
  */
 const CityPointer: React.FC<CityPointerProps> = ({ city, tabletTop, tabletLeft, desktopTop, desktopLeft }): React.JSX.Element => {
-    const [pointerCoor, setPointerCoor] = useState<React.CSSProperties>({});
+    const [pointerCoor, setPointerCoor] = useState<React.CSSProperties>(() => {
+        return window.innerWidth >= 1024
+            ? { top: desktopTop, left: desktopLeft }
+            : { top: tabletTop, left: tabletLeft };
+    });
 
     useEffect(() => {
-        updatePointerCoor();
+        /**
+         * Updates the pointer position based on the current screen size.
+         * Determines whether the viewport is desktop or tablet and applies 
+         * the corresponding coordinates.
+         */
+        const updatePointerCoor = () => {
+            const isDesktop = window.innerWidth >= 1024;
+            const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
+
+            setPointerCoor(prev => {
+                const newCoor = isDesktop
+                    ? { top: desktopTop, left: desktopLeft }
+                    : isTablet
+                        ? { top: tabletTop, left: tabletLeft }
+                        : prev;
+                return JSON.stringify(prev) !== JSON.stringify(newCoor) ? newCoor : prev;
+            });
+        };
+
         window.addEventListener('resize', updatePointerCoor);
         return () => {
             window.removeEventListener('resize', updatePointerCoor);
         };
-    }, [pointerCoor]);
-
-    /**
-     * Updates the pointer position based on the current screen size.
-     * Determines whether the viewport is desktop or tablet and applies 
-     * the corresponding coordinates.
-     */
-    const updatePointerCoor = () => {
-        const isDesktop = window.innerWidth >= 1024;
-        const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
-        isDesktop && setPointerCoor({ top: desktopTop, left: desktopLeft });
-        isTablet && setPointerCoor({ top: tabletTop, left: tabletLeft });
-    };
+    }, [desktopTop, desktopLeft, tabletTop, tabletLeft]);
 
     return (
         <div className='cityPointer' style={pointerCoor}>
