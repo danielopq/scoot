@@ -16,3 +16,13 @@
 #notListed p{
     color:var(--dimGrey);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #notListed {
+        width: 573px;
+        height: 304px;
+        margin: 64px 0px 120px;
+    }
+}

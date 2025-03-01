@@ -40,7 +40,7 @@
 @media(min-width:768px) and (max-width:1024px){
     #worldMap {
         width: 689px;
-        height: 705px;
+        height: 337px;
         margin-top: 144px;
         background: url('./img/world-map-tablet.png') top/689px no-repeat;
     }
