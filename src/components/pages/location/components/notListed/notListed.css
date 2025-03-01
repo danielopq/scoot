@@ -26,3 +26,27 @@
         margin: 64px 0px 120px;
     }
 }
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width: 1025px){
+    #notListed {
+        width: 1111px;
+        height: 100px;
+        margin: 120px 0px;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    #notListed h2{
+        width: 351px;
+        height: 96px;
+    }
+    
+    #notListed p{
+        width: 445px;
+        height: 100px;
+        margin:0px 105px 0px 30px; 
+    }
+}
