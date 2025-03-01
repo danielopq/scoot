@@ -1,5 +1,5 @@
 import { PageHeader } from "../../layout";
-import { WorldMap } from "./components";
+import { WorldMap, NotListed } from "./components";
 
 import mobileHeaderPic from '../../../assets/img/headers/careers-location-hero-mobile.jpg';
 import tabletHeaderPic from '../../../assets/img/headers/careers-locations-hero-tablet.jpg';
@@ -15,6 +15,7 @@ const Location: React.FC = (): React.JSX.Element => {
         <main id="location">
             <PageHeader title="Locations" mobileImg={mobileHeaderPic} tabletImg={tabletHeaderPic} desktopImg={desktopHeaderPic} />
             <WorldMap />
+            <NotListed />
         </main>
     )
 }
