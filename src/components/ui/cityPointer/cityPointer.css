@@ -1,4 +1,4 @@
-.cityPointer{
+.cityPointer {
     position: absolute;
     display: none;
     flex-direction: column;
@@ -7,7 +7,7 @@
     color: var(--darkNavy);
 }
 
-.cityPointer div:first-child{
+.cityPointer div:first-child {
     width: inherit;
     display: inline-flex;
     align-items: center;
@@ -15,29 +15,51 @@
     background-color: var(--orange);
 }
 
-.cityPointer div:last-child{
+.cityPointer div:last-child {
     width: 0;
     height: 0;
 }
 
 /*############################## TABLET VERSION ##############################*/
 
-@media(min-width:768px) and (max-width:1024px){
-    .cityPointer{
+@media(min-width:768px) and (max-width:1024px) {
+    .cityPointer {
         width: 120px;
         height: 40px;
         display: flex;
     }
-    
-    .cityPointer div:first-child{
+
+    .cityPointer div:first-child {
         height: 32px;
         font: 700 13px/28px 'SpaceMono-Bold';
         letter-spacing: -0.58px;
     }
-    
-    .cityPointer div:last-child{
+
+    .cityPointer div:last-child {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid var(--orange);
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media (min-width:1025px) {
+    .cityPointer {
+        width: 189px;
+        height: 88px;
+        display: flex;
+    }
+
+    .cityPointer div:first-child {
+        height: 72px;
+        font: 700 24px/28px 'SpaceMono-Bold';
+        letter-spacing: -1.07px;
+    }
+
+    .cityPointer div:last-child {
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 16px solid var(--orange);
     }
 }
