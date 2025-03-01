@@ -21,29 +21,29 @@ const WorldMap:React.FC = ():React.JSX.Element=>{
                 city='New York'
                 tabletTop='52px'
                 tabletLeft='98px'
-                desktopLeft=''
-                desktopTop=''
+                desktopLeft='147px'
+                desktopTop='71px'
                 />
                 <CityPointer
                 city='London'
                 tabletTop='25px'
                 tabletLeft='243px'
-                desktopLeft=''
-                desktopTop=''
+                desktopLeft='393px'
+                desktopTop='18px'
                 />
                 <CityPointer
                 city='Yakarta'
                 tabletTop='169px'
                 tabletLeft='480px'
-                desktopLeft=''
-                desktopTop=''
+                desktopLeft='779px'
+                desktopTop='251px'
                 />
                 <CityPointer
                 city='Yokohama'
                 tabletTop='65px'
                 tabletLeft='530px'
-                desktopLeft=''
-                desktopTop=''
+                desktopLeft='856px'
+                desktopTop='78px'
                 />
             </div>
         </section>
