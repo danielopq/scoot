@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './navBar.css';
-import navigateTo from '../../../utils/navigateTo';
 import { HamburgerBt, MobileNavBarButton, DefaultButton, NavBarButton } from '../../ui';
 
 /**
@@ -13,30 +13,43 @@ const NavBar = (): React.JSX.Element => {
 
     const [mobileMenuDisplay, setMobileMenuDisplay] = useState<boolean>(false);
     const mobileNavBarRef = useRef<HTMLDivElement>(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (mobileNavBarRef.current) {
-            mobileNavBarRef.current.style.display = mobileMenuDisplay ? 'block' : 'none';
+            mobileNavBarRef.current.className = mobileMenuDisplay ? 'displayed' : 'hidden';
+            mobileMenuDisplay ? document.body.classList.add('noScroll') : document.body.classList.remove('noScroll');
         }
     }, [mobileMenuDisplay]);
+
+    /**
+     * Navigates to the specified path within the website.
+     * 
+     * @param {string} path - The destination path to navigate to.
+     * @param {boolean} mobileMenu - Indicates whether the navigation is triggered from the mobile menu.
+     */
+    const navigateTo = (path: string, mobileMenu: boolean) => {
+        navigate(path);
+        mobileMenu && setMobileMenuDisplay(!mobileMenuDisplay);
+    }
 
     return (
         <nav id="navBar">
             <HamburgerBt menuDisplayed={mobileMenuDisplay} handleClick={(): void => setMobileMenuDisplay(!mobileMenuDisplay)} />
             <div id="desktopNavBar">
                 <div>
-                    <NavBarButton text="About" handleClick={navigateTo('/about')}/>
-                    <NavBarButton text="Location" handleClick={navigateTo('/location')} />
-                    <NavBarButton text="Careers" handleClick={navigateTo('/careers')} />
+                    <NavBarButton text="About" handleClick={() => navigateTo('/about', false)} />
+                    <NavBarButton text="Location" handleClick={() => navigateTo('/location', false)} />
+                    <NavBarButton text="Careers" handleClick={() => navigateTo('/careers', false)} />
                 </div>
                 <DefaultButton text="Get Scootin" />
             </div>
             <div ref={mobileNavBarRef} id="mobileNavBar">
                 <div id="mobileNavBar-content">
                     <div>
-                        <MobileNavBarButton text="About" handleClick={navigateTo('/about')} />
-                        <MobileNavBarButton text="Location" handleClick={navigateTo('/location')} />
-                        <MobileNavBarButton text="Careers" handleClick={navigateTo('/careers')} />
+                        <MobileNavBarButton text="About" handleClick={() => navigateTo('/about', true)} />
+                        <MobileNavBarButton text="Location" handleClick={() => navigateTo('/location', true)} />
+                        <MobileNavBarButton text="Careers" handleClick={() => navigateTo('/careers', true)} />
                     </div>
                     <DefaultButton text="Get Scootin" />
                 </div>
