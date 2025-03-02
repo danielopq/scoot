@@ -40,17 +40,32 @@
 }
 
 #mobileNavBar-content div{
-    height: 123px;
+    height: 154px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#desktopNavBar, #desktopNavBar > div{
+#desktopNavBar, #desktopNavBar div{
     height: auto;
     display: none;
     align-items: center;
     justify-content: space-between;
+}
+
+#logoBt{
+    width: 75px;
+    height: 20px;
+    background: url('../../../assets/img/logo.svg') center/75px no-repeat;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+@media(hover:hover){
+    #logoBt:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
 }
 
 #desktopNavBar{
@@ -58,6 +73,10 @@
 }
 
 #desktopNavBar > div{
+    width: 415px;
+}
+
+#desktopNavBar > div > div{
     width: 249px;
 }
 
@@ -65,12 +84,9 @@
 
 @media (min-width: 768px) {
     #navBar{
-        width: 100vw;
         height: 96px;
-        max-width: 1186px;
-        padding: 0px 40px 0px 205px;
-        background: url('../../../assets/img/logo.svg') 40px 50%/108px no-repeat;
-        justify-content: flex-end;
+        max-width: 1440px;
+        background: none;
     }
     
     #hamburgerBt{
@@ -81,8 +97,24 @@
         display: none;
     }
 
-    #desktopNavBar, #desktopNavBar > div{
-        display: inline-flex!important;
+    #desktopNavBar, #desktopNavBar div{
+        display: inline-flex;
     }
     
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media(min-width:768px){
+    #navBar{
+        padding: 0px 40px;
+    }
+}
+
+/*############################## DESKTOP VERSION ##############################*/
+
+@media(min-width:1025px){
+    #navBar{
+        padding: 0px 165px 0px 169px;
+    }
 }

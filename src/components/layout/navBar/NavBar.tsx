@@ -38,15 +38,19 @@ const NavBar = (): React.JSX.Element => {
             <HamburgerBt menuDisplayed={mobileMenuDisplay} handleClick={(): void => setMobileMenuDisplay(!mobileMenuDisplay)} />
             <div id="desktopNavBar">
                 <div>
-                    <NavBarButton text="About" handleClick={() => navigateTo('/about', false)} />
-                    <NavBarButton text="Location" handleClick={() => navigateTo('/location', false)} />
-                    <NavBarButton text="Careers" handleClick={() => navigateTo('/careers', false)} />
+                    <button id="logoBt" onClick={() => navigateTo('/', false)}></button>
+                    <div>
+                        <NavBarButton text="About" handleClick={() => navigateTo('/about', false)} />
+                        <NavBarButton text="Location" handleClick={() => navigateTo('/location', false)} />
+                        <NavBarButton text="Careers" handleClick={() => navigateTo('/careers', false)} />
+                    </div>
                 </div>
                 <DefaultButton text="Get Scootin" />
             </div>
             <div ref={mobileNavBarRef} id="mobileNavBar">
                 <div id="mobileNavBar-content">
                     <div>
+                        <MobileNavBarButton text="Home" handleClick={() => navigateTo('/', true)} />
                         <MobileNavBarButton text="About" handleClick={() => navigateTo('/about', true)} />
                         <MobileNavBarButton text="Location" handleClick={() => navigateTo('/location', true)} />
                         <MobileNavBarButton text="Careers" handleClick={() => navigateTo('/careers', true)} />
